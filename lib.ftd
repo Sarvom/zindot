@@ -1,10 +1,7 @@
 -- import: sarvom.github.io/zindot/assets
 -- import: fastn-community.github.io/opensans-typography
 -- import: sarvom.github.io/zindot/common
-
--- ftd.document: My title
--- ftd.text: this page has a title
--- end: ftd.document
+-- import: sarvom.github.io/zindot/document
 
 -- component navbar:
 caption name:
