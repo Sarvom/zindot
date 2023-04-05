@@ -4,21 +4,23 @@
 
 -- component navbar:
 caption name:
-ftd.image-src pic:
 string text1:
+string text2:
+string text3:
+string text4:
+ftd.image-src pic:
 ftd.type-data types: $opensans-typography.types
 
 -- ftd.row:
 align-content: left
 width: fill-container
-border-width.px: 10
-border-color: white
+border-width.px: 20
+border-color: #ffffff00
 padding-horizontal.px: 40 
 spacing.fixed.px: 40
-margin-bottom.px: 10
 types: $opensans-typography.types
 shadow: $common.navbar
-background.solid: #ffffff
+background.solid: #ffffff99
 sticky: true
 
 -- ftd.row:
@@ -46,21 +48,21 @@ text-align: center
 white-space: nowrap
 link: /zindot/
 
--- ftd.text: Services
+-- ftd.text: $navbar.text2
 color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: index.html#services
 
--- ftd.text: Training
+-- ftd.text: $navbar.text3
 color: #c091fb
 role: $inherited.types.label-large
 text-align: center
 white-space: nowrap
 link: training/
 
--- ftd.text: Contact Us
+-- ftd.text: $navbar.text4
 color: #c091fb
 role: $inherited.types.label-large
 text-align: center
@@ -82,6 +84,7 @@ link: index.html#contact
 
 -- component button:
 caption name:
+string url: /
 
 -- ftd.text: $button.name
 role: $inherited.types.label-large
@@ -91,10 +94,7 @@ padding-right.px: 30
 padding-top.px: 10
 padding-bottom.px: 10
 border-width.px: 1
-border-top-left-radius.px: 10
-border-top-right-radius.px: 10
-border-bottom-left-radius.px: 10
-border-bottom-right-radius.px: 10
+border-radius.px: 10
 background.solid: #A855F7
 border-color: #c091fb
 color: white
@@ -119,9 +119,9 @@ ftd.type-data types: $opensans-typography.types
 -- ftd.row:
 align-content: right
 width: fill-container
-padding-right.px: 144
-padding-left.px: 144
-border-color: white
+padding-vertical.px: 100
+padding-horizontal.px: 150
+
 
 -- ftd.column:
 
@@ -139,8 +139,10 @@ padding-vertical.px: 10
 spacing.fixed.px: 10
 
 -- button: Services
+url: /training/
 
 -- button: Training
+url: training/
 
 -- end: ftd.row
 
@@ -170,8 +172,9 @@ ftd.type-data types: $opensans-typography.types
 
 -- ftd.column:
 align-content: center
-padding-top.px: 62
+padding-top.px: 100
 id: services
+background.solid: white
 
 -- ftd.text: $about.title
 color: #000000
@@ -319,6 +322,7 @@ oriented projects of students and even faculty members so you can work on that d
 -- end: ftd.row
 
 -- button: Know more
+url: /training/
 
 -- end: ftd.column
 -- end: service
@@ -410,6 +414,7 @@ programme by completing the form
 
 
 -- button: Apply
+url: /training/
 
 -- end: ftd.row
 
@@ -602,6 +607,7 @@ role: $inherited.types.copy-small
 -- end: ftd.row
 
 -- ftd.text-input:
+align-self: start
 placeholder: Message
 padding.px: 10 
 width.fixed.px: 620
@@ -616,6 +622,7 @@ role: $inherited.types.copy-small
 -- end: ftd.column
 
 -- button: Send
+url: /training/
 
 -- ftd.column:
 padding-top.px: 50
@@ -703,8 +710,8 @@ types: $opensans-typography.types
 
 -- ftd.image:
 src: $item.icon
-height.fixed.px: 60
-width.fixed.px: 60
+height.fixed.px: 80
+width.fixed.px: 80
 align-self: center
 
 -- ftd.text: $item.title
